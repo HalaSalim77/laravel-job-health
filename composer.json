@@ -1,0 +1,53 @@
+{
+    "name": "yaaqen/laravel-job-health",
+    "description": "Named-job catalog, run log, missed detection, and 30-day history dashboard for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "jobs",
+        "schedule",
+        "health",
+        "monitoring"
+    ],
+    "require": {
+        "php": "^8.3|^8.4",
+        "dragonmantank/cron-expression": "^3.3",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yaaqen\\JobHealth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yaaqen\\JobHealth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yaaqen\\JobHealth\\JobHealthServiceProvider"
+            ],
+            "aliases": {
+                "JobHealth": "Yaaqen\\JobHealth\\Facades\\JobHealth"
+            }
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
