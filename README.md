@@ -1,4 +1,4 @@
-# yaaqen/laravel-job-health
+# laravel-job-health
 
 Named-job catalog, run log, missed detection, and a 30-day history dashboard for Laravel 11 and 12.
 
