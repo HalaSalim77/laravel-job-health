@@ -10,19 +10,20 @@ A job here is a catalog entry (`key` + cron), not a PHP class. Only keys listed 
 
 Requires PHP 8.3+ and Laravel 11 or 12.
 
-**From Packagist** (after the package is registered):
-
 ```bash
 composer require yaaqen/laravel-job-health
 ```
 
-**From GitHub** (until Packagist):
+Packagist: [yaaqen/laravel-job-health](https://packagist.org/packages/yaaqen/laravel-job-health)  
+Source: [github.com/HalaSalim77/laravel-job-health](https://github.com/HalaSalim77/laravel-job-health)
+
+To require from GitHub instead of Packagist:
 
 ```json
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/YOUR_ORG/laravel-job-health"
+        "url": "https://github.com/HalaSalim77/laravel-job-health"
     }
 ]
 ```
@@ -30,8 +31,6 @@ composer require yaaqen/laravel-job-health
 ```bash
 composer require yaaqen/laravel-job-health:^1.0
 ```
-
-The GitHub repo must be **public** for Packagist (and for `composer require` without a token).
 
 Publish what you need:
 
